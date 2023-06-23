@@ -1,0 +1,50 @@
+/* Nunito */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
+
+/* Open Sans */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+/* Josefin Sans */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+/* Alata Sans */
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+
+/* Golos Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Golos+Text&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    @apply text-black text-base;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Golos Text", sans-serif;
+    @apply text-black text-lg;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply w-full flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200;
+  }
+  .btn2 {
+    @apply relative -top-1 -left-1 bg-gray-800 py-2.5 px-5 font-bold capitalize text-white transition-all before:absolute before:top-1 before:left-1 before:-z-[1] before:h-full before:w-full before:border-2 before:border-gray-700 before:transition-all before:content-[''] hover:top-0 hover:left-0 before:hover:top-0 before:hover:left-0;
+  }
+  .btn3 {
+    @apply w-64 relative rounded-3xl bg-gradient-to-l from-purple-700 to-blue-700 px-7 py-4 text-center font-semibold capitalize text-white hover:bg-gradient-to-r sm:text-sm md:text-sm xl:text-base;
+  }
+}
